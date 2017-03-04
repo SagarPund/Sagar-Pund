@@ -1,0 +1,3 @@
+SELECT d.DName as DEPARTMENT_NAME,count(e.DeptNo) as NO_OF_EMPLOYEE
+FROM department d, employee e
+WHERE d.DeptNo = e.DeptNo group by d.DName
